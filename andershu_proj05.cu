@@ -116,7 +116,7 @@ MonteCarlo( float *dvs, float *dths, float *dgs, float *dhs, float *dds, int *dh
 			float upperDist = vx * tmax  -  g;
 
 			// see if the ball hits the castle:
-			if(upperDist >= d)
+			if(upperDist >= (d - TOL) && upperDist <= (d + TOL))
 			{
 				dhits[gid] = 1;
 			}
