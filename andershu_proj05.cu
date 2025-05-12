@@ -20,6 +20,7 @@
 #define NUMTRIALS	( 8*1024*1024 )
 #endif
 
+#define CSV
 
 // number of threads per block:
 #ifndef BLOCKSIZE
